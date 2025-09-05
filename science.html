@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 6 Science Chapters</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+            color: #0f172a;
+        }
+        .logo-container {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+        }
+        .logo-container img {
+            height: 10rem;
+        }
+        .chapter-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            padding: 1.5rem;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 1rem;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            max-height: 70vh;
+            overflow-y: auto;
+            width: 90%;
+            max-width: 1200px;
+        }
+        .chapter-item {
+            background-color: #f0fdf4;
+            padding: 1rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            cursor: pointer;
+            text-align: center;
+        }
+        .chapter-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .chapter-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #0a2e1c;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <a href="index.html">
+            <img src="logo.png" alt="BrainBytes Logo">
+        </a>
+    </div>
+
+    <h1 class="text-black text-4xl font-bold mb-8 mt-20 text-center">Class 6 Science Chapters</h1>
+    <div class="chapter-list">
+        <div class="chapter-item"><h3 class="chapter-title">Chapter 1: Food: Where Does it Come From?</h3></div>
+        <div class="chapter-item"><h3 class="chapter-title">Chapter 2: Components of Food</h3></div>
+        <div class="chapter-item"><h3 class="chapter-title">Chapter 3: Fibre to Fabric</h3></div>
+        <div class="chapter-item"><h3 class="chapter-title">Chapter 4: Sorting Materials into Groups</h3></div>
+        <div class="chapter-item"><h3 class="chapter-title">Chapter 5: Separation of Substances</h3></div>
+        <div class="chapter-item"><h3 class="chapter-title">Chapter 6: Changes Around Us</h3></div>
+        <div class="chapter-item"><h3 class="chapter-title">Chapter 7: Getting to Know Plants</h3></div>
+        <div class="chapter-item"><h3 class="chapter-title">Chapter 8: Body Movements</h3></div>
+        <div class="chapter-item"><h3 class="chapter-title">Chapter 9: The Living Organisms and Their Surroundings</h3></div>
+        <div class="chapter-item"><h3 class="chapter-title">Chapter 10: Motion and Measurement of Distances</h3></div>
+        <div class="chapter-item"><h3 class="chapter-title">Chapter 11: Light, Shadows and Reflections</h3></div>
+        <div class="chapter-item"><h3 class="chapter-title">Chapter 12: Electricity and Circuits</h3></div>
+        <div class="chapter-item"><h3 class="chapter-title">Chapter 13: Fun with Magnets</h3></div>
+        <div class="chapter-item"><h3 class="chapter-title">Chapter 14: Water</h3></div>
+        <div class="chapter-item"><h3 class="chapter-title">Chapter 15: Air Around Us</h3></div>
+        <div class="chapter-item"><h3 class="chapter-title">Chapter 16: Garbage In, Garbage Out</h3></div>
+    </div>
+</body>
+</html>
