@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 9 Subjects</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .logo-container {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+        }
+
+        .logo-container img {
+            height: 10rem;
+        }
+
+        .subject-container {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .subject-container:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .subject-overlay {
+            background-color: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(4px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding: 1rem;
+        }
+
+        .subject-overlay h3 {
+            color: white;
+            font-size: 2rem;
+            font-weight: 700;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <a href="index.html">
+            <img src="logo.png" alt="BrainBytes Logo">
+        </a>
+    </div>
+
+    <h1 class="text-black text-4xl font-bold mb-8 mt-20 text-center">Subjects for Class 9</h1>
+    <div class="w-full max-w-7xl flex justify-center gap-8">
+    <div class="subject-container w-72 h-72" style="background-image: url('https://placehold.co/400x300/f0f9ff/0f172a?text=Mathematics');">
+        <div class="subject-overlay"><h3>Mathematics</h3></div>
+    </div>
+    <div class="subject-container w-72 h-72" style="background-image: url('https://placehold.co/400x300/f0fdf4/0a2e1c?text=Science');">
+        <div class="subject-overlay"><h3>Science</h3></div>
+    </div>
+    <div class="subject-container w-72 h-72" style="background-image: url('https://placehold.co/400x300/fff7ed/3f321d?text=Computer+Science');">
+        <div class="subject-overlay"><h3>Computer Science</h3></div>
+    </div>
+</div>
+</body>
+</html>
